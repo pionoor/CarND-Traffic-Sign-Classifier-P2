@@ -71,19 +71,18 @@ My final model consisted of the following layers:
 | Input         		| 32x32x3 RGB image   							| 
 | Convolution 5x5     	| 1x1 stride, VALID padding, outputs 28x28x6 	|
 | RELU					|												|
-| Max pooling 2x2	    | 2x2 stride,  outputs 14x14x6 				|
-| Convolution 5x5	    | 1x1 stride, VALID padding, outputs 10x10x16 	|.      									|
-| RELU					|										
-| Max pooling 2x2	    | 2x2 ksize, 2x2 stride,  outputs 5x5x16 
-		|
-| Flatten		        | output 400        									|
-| Fully Connected 400	| output 120        									|
- RELU					|	
-|Dropout				| Keep_prob: 0.5											|
-| Fully Connected 84	| output 10        									|
- RELU					|	
-|Dropout				| Keep_prob: 0.5											|
-|						|												|
+| Max pooling 2x2	    | 2x2 stride,  outputs 14x14x6 				    |
+| Convolution 5x5	    | 1x1 stride, VALID padding, outputs 10x10x16 	|
+| RELU					|												|
+| Max pooling 2x2	    | 2x2 ksize, 2x2 stride,  outputs 5x5x16 		|
+| Flatten		        | output 400   									|
+| Fully Connected 400	| output 120        							|
+| RELU					|												|
+| Dropout				| Keep_prob: 0.5								|
+| Fully Connected 84	| output 10        								|
+| RELU					|												|
+| Dropout				| Keep_prob: 0.5								|
+|:----------------------|:----------------------------------------------|											
  
 
 
