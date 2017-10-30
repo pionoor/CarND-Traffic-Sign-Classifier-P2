@@ -82,7 +82,7 @@ My final model consisted of the following layers:
 | Fully Connected 84	| output 10        								|
 | RELU					|												|
 | Dropout				| Keep_prob: 0.5								|
-|:----------------------|:----------------------------------------------|											
+											
  
 
 
