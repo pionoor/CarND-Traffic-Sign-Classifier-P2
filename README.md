@@ -10,7 +10,6 @@ The goals / steps of this project are the following:
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
 * Analyze the softmax probabilities of the new images
-* Summarize the results with a written report
 
 
 [//]: # (Image References)
@@ -20,8 +19,6 @@ The goals / steps of this project are the following:
 [image3]: ./examples/signes.png "Signes"
 [image4]: ./test_images/11.png "Traffic Sign 2"
 
-
-#Writeup / README
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
