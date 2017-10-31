@@ -16,14 +16,15 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/visualData.png "Visualization"
-[image2]: ./examples/samples.png "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
-
+[image2]: ./examples/samples.png "samples"
+[image3]: ./test_images/1.png "Traffic Sign 1"
+[image4]: ./test_images/11.png "Traffic Sign 2"
+[image5]: ./test_images/12.png "Traffic Sign 3"
+[image6]: ./test_images/13.png "Traffic Sign 4"
+[image7]: ./test_images/17.png "Traffic Sign 5"
+[image8]: ./test_images/18.png "Traffic Sign 6"
+[image9]: ./test_images/27.png "Traffic Sign 7"
+[image10]: ./test_images/34.png "Traffic Sign 8"
 
 #Writeup / README
 
@@ -102,9 +103,19 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+
+I used the original LeNet architecture, with two added dropouts at the fc1, and fc2.
+
 * What were some problems with the initial architecture?
+Initially, the model was overfitting the train data. When I measured the test data, the accuracy was around 75%. 
+
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
+To fix the overfitting issue, I added two dropout layers, I was able to reach 91% accuracy. 
+
 * Which parameters were tuned? How were they adjusted and why?
+I found the best hyperparameter combinations
+
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
 If a well known architecture was chosen:
@@ -119,8 +130,9 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image3] ![alt text][image4] ![alt text][image5] 
+![alt text][image6] ![alt text][image7] ![alt text][image8]
+![alt text][image9] ![alt text][image7]
 
 The first image might be difficult to classify because ...
 
@@ -130,11 +142,13 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| No entry      		| No entry   			| 
+| Turn left ahead     	| Turn left ahead 		|
+| Pedestrains		| End of no passing		|
+| Speed limit (30km/h)	| Speed limit (30km/h)	|
+| General caution		| General caution       |
+| Yield		            | Yield                 |
+| Right-of-way at the next intersection |  Right-of-way at the next intersection                 |
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
