@@ -17,14 +17,9 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/visualData.png "Visualization"
 [image2]: ./examples/samples.png "samples"
-[image3]: ./test_images/1.png "Traffic Sign 1"
+[image2]: ./examples/signes.png "Signes"
 [image4]: ./test_images/11.png "Traffic Sign 2"
-[image5]: ./test_images/12.png "Traffic Sign 3"
-[image6]: ./test_images/13.png "Traffic Sign 4"
-[image7]: ./test_images/17.png "Traffic Sign 5"
-[image8]: ./test_images/18.png "Traffic Sign 6"
-[image9]: ./test_images/27.png "Traffic Sign 7"
-[image10]: ./test_images/34.png "Traffic Sign 8"
+
 
 #Writeup / README
 
@@ -130,9 +125,7 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image3] ![alt text][image4] ![alt text][image5] 
-![alt text][image6] ![alt text][image7] ![alt text][image8]
-![alt text][image9] ![alt text][image7]
+![alt text][image3] 
 
 The first image might be difficult to classify because ...
 
